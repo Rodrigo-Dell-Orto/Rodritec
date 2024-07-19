@@ -48,13 +48,16 @@ header nav ul li a{
     font-size: 18px;
 }
 
+header nav ul li a:hover{
+    color: blue;
+}
 
 
 /*!-------MAIN----------*/
 
 .hero{
     width: 100%;
-    height: calc(100vh - 204px);
+    height: 300px;
     color: white;
     text-align: center;
     background-image: url(../img/samsungg.jpg);
@@ -125,6 +128,10 @@ header nav ul li a{
     background-color: black;
     padding: 15px;
     border-radius: 10px;
+}
+
+.destacados div a:hover{
+    background-color: blue;
 }
 
 .destacados div img{
