@@ -1,0 +1,292 @@
+/*!--------FONTS-------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*!---------RESET---------*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+/*!-------HEADER----------*/
+
+header{
+    background-color: black;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header h1{
+    color: white;
+    font-size: 50px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+
+/*!-------MAIN----------*/
+
+.hero{
+    width: 100%;
+    height: calc(100vh - 204px);
+    color: white;
+    text-align: center;
+    background-image: url(../img/samsungg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2{
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.724);
+    font-size: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.hero a{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.destacados h2{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.destacados-contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.destacados .destacados-contenedor div{
+    border: 1px solid gray;
+    width: 300px;
+    height: 370px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.destacados div h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.destacados div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.destacados div img{
+    width: 300px;
+    height: 250px;
+}
+
+.destacados-2 h2{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-galeria{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item{
+    position: relative;
+}
+
+.grid-item h3{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+}
+
+.fixed img {
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!-------FOOTER---------*/
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer h2{
+    color: white;
+    font-size: 40px;
+}
+
+footer img{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 720px){
+    header{
+        flex-direction: column;
+        position: static;
+    }
+    header nav ul li{
+        margin: 5px;
+    }
+    .hero h2{
+        width: 300px;
+        font-size: 25px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 440px){
+    header nav ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        text-align: center;
+    }
+    header nav ul li a{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

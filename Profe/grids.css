@@ -1,0 +1,63 @@
+/*--------RESET-------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    border: solid 4px #e66a68; 
+    margin: 5px;
+
+    /*! HABILITAMOS LA GRILLA */
+    display: grid;
+
+    /*! HABILITAMOS FILAS */
+    grid-template-rows: 200px 200px 200px;
+
+    
+    /*! HABILITAMOS COLUMNAS */
+    /* grid-template-columns: 200px 200px 200px; */ /*? Maneras de separar las columnas */
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-auto-rows: 200px;
+    /*! REPEAT */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(2, 1fr) 2fr; */ /*? Para repetir en cantidad, repeat(Cantidad a repetir) en que fraccion) */
+    /*! GAP */
+    gap: 10px;
+    /*? Para hacerlo por separado podemos utilizar column-gap o row-gap */
+    /* column-gap: 20px; */
+    /* row-gap: 10px; */
+
+}
+
+
+
+.grid-items{
+    border: solid 2px #740b17;
+    background-color: rgb(221, 173, 111);
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.primer-item{
+    /*! Le decimos en que linea de la columna empezamos*/
+    grid-column-start: 1;
+    /*! Le decimos en que linea de la columna terminamos*/
+    grid-column-end: 3;
+
+}
+
+.tercer-item{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.noveno-item{
+    /*! Para no crear dos propiedades podemos utilizar / */
+    grid-column: 2 / 4;
+    /* oooooogrid-row: ; */
+}
